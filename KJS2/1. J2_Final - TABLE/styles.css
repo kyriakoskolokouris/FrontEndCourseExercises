@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+html { 
+    background: url(https://images.unsplash.com/photo-1576836165612-8bc9b07e7778?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    zoom: 100%;
+    font-family: 'Montserrat';   
+}
+
+body {
+    background-color:transparent;
+}
+
+#header {
+    background-color: rgb(4, 1, 32);
+    margin-left: 550px;
+    margin-right: 520px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    color: #ceba0b;
+}
+
+hr {
+    color: black;
+}
+caption {
+    padding: 10px;
+    /* font-size: x-large; */
+    background-color: #fffb00;
+    text-align: center;
+    /* padding-left: 130px; */
+    text-transform: uppercase;
+    font-weight: bold;
+    /* padding-right: 180px; */
+
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    max-width: 700px;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(196, 183, 1, 0.35); 
+    margin-left: 340px;
+    background-color: transparent;
+    opacity: 0.8;
+
+}
+
+.content-table thead tr  {
+    background-color: #fde401 ;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid;
+}
+
+
+.content-table td {
+    padding: 12px 15px;
+    font-weight: bold;
+
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even)  {
+    background-color: #f3f3f3;
+    }
+ 
+    .content-table tbody tr:nth-of-type(odd)  {
+        background-color: #bbbbbb;
+        }
+    
+.content-table tbody tr:last-of-type {
+        border-bottom: 3px solid #fffb00;
+        }
+         
+
+
+th {
+    padding: 10px;
+    /* border: 1px solid black; */
+}
+
+
+td {
+    /* border: 1px solid black; */
+    padding: 10px; 
+}
+
+ol > li {
+    text-align: left;
+    /* list-style-type: none; */
+    margin-left: 15px;
+;
+
+}
+
+th {
+    border-left: 1px solid;
+}
+
+td {
+    border-right: 1px solid rgb(32, 32, 32);
+}
