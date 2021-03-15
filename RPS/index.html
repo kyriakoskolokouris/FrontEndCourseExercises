@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Game - Rock, Paper, Scissors</title>
+	<meta charset="UTF-8" />
+  </head>
+
+
+<body>
+	<div id="app"></div>
+<p>Game On!</p>
+
+
+
+	<!-- <script src="src/index.js"> -->
+
+<script>
+let playerScore = 0;
+let computerScore = 0; 
+let draw = 0;
+
+function computerPlay() {
+  const computerHand = ["rock", "paper", "scissors"];
+  const computerRes = Math.floor(Math.random() * computerHand.length);
+  return computerHand[computerRes];
+  // This is another solution (deleting the 2 lines above)
+  //  :return computerHand[Math.floor(Math.random() * computerHand.length)];
+}
+// console.log("Computer play is: " + computerPlay());
+
+function playRound() {
+  const playerInput = prompt("Rock, paper or scissors???");
+  const playerSelection = playerInput.toLowerCase();
+  const computerSelection = computerPlay();
+  let result;
+ 
+  
+  if (playerSelection === computerSelection){
+    draw++
+    result = "It is a tie: Play Again";
+  }
+
+if ((playerSelection === "rock" && computerSelection === "scissors") ||
+    (playerSelection === "scissors" && computerSelection === "paper") ||
+    (playerSelection === "paper" && computerSelection === "rock")) {
+      playerScore++
+      result = `You Win, ${playerSelection} beats ${computerSelection}`;
+      
+    }
+
+if (( playerSelection === "rock" && computerSelection === "paper") ||
+    (playerSelection ==="paper" && computerSelection === "scissors") ||
+    (playerSelection === "scissors" && computerSelection ==="rock")) {
+    computerScore++
+    result = `You Loose, ${computerSelection} beats ${playerSelection}`;
+    }
+  
+
+console.log(`You picked: ${playerSelection}`);
+console.log(`Computer picked: ${computerSelection}`);
+console.log(result);
+console.log(`Player Score is ${playerScore}`);
+console.log(`Computer Score is ${computerScore}`);
+console.log(`Number of draws is ${draw}`);
+return result;
+}
+
+// playRound();
+
+
+function game() {
+  playRound();
+  playRound();
+  playRound();
+  playRound();
+  playRound();
+}
+
+finalResult = function() {
+  if (playerScore >  computerScore){
+    console.log("CONGRATS - YOU WIN!"); 
+  } else if ( playerScore < computerScore){
+    console.log("YOU LOSER - COMPUTER WINS");
+  } else {
+    console.log("IT'S A DRAW - PLAY ANOTHER ROUND");
+  }
+
+}
+
+game();
+finalResult();
+
+
+
+// if (playerSelection !== "rock" && playerSelection !== "paper" && playerSelection !== "scissors"){
+//     result = "Invalid: Try Again!";
+
+// let playRound = function(playerSelection, computerSelection) {
+// if (playerSelection === computerSelection){
+//   console.log("It is a tie: Play Again");
+//   }
+//   else if (playerSelection === "rock") {
+//     if(computerSelection === "scissors") {
+//   console.log("You Win! Rock beats Scissors");
+//     }
+//     else {
+//       console.log("You Loose! Paper beats Rock");
+//     }
+//   }
+//   else if (playerSelection === "paper"){
+//      if (computerSelection === "rock"){
+//      console.log("You Win! Paper beats Rock");
+//   }
+//   else { 
+//     console.log("You Loose! : Scissors beat Paper");
+//   }
+// }
+//   else if (playerSelection === "scissors") {
+//     if (computerSelection ==="paper"){
+//       console.log("You Win! Scissors beat Paper");
+//     }
+//     else {
+//       console.log("You Loose! Rock beats Scissors");
+//     }
+//     }
+//   }
+
+// playRound()
+  
+
+
+
+// if (playerSelection === "rock" && computerSelection === "paper" ){
+//   console.log();"You Loose! Paper beats Rock"
+// }
+// else if 
+//   (playerSelection === computerSelection){
+//   console.log("It is a tie: Play Again");
+// }
+// else if (playerSelection === "paper" && computerSelection === "rock") {
+//   console.log("You Win! Paper beats Rock");
+// } 
+// else if (playerSelection === "paper" && computerSelection === "scissors") {
+//   console.log("You Lose! Scissors beats Paper");
+// }
+//  else if (playerSelection === "scissors" && computerSelection === "paper") {
+//   console.log("You Win: Scissors beat Paper");
+// } 
+// else if (playerSelection === "scissors" && computerSelection === "rock") {
+//   console.log("You Lose! Rock beats Scissors");
+// }
+
+
+// else {
+//   console.log("Invalid: Try Again!");
+// }
+ 
+
+ 
+
+ 
+</script>
+
+</body>
+
+</html>
