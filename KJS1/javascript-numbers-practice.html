@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <!-- <script src="main.js"></script> -->
+
+</head>
+<body>
+    <script>
+        console.log(23+97);
+console.log(1, 2, 3, 4, 5, 6);
+console.log((4 + 6 + 9) / 77);
+
+let a = 10;
+console.log(a);
+console.log(9*a);
+let b = 7 * a;
+console.log(b);
+
+const max = 57;
+let actual = max -13;
+let percentage = actual / max
+console.log(percentage);
+
+//Vat
+const VAT = 24;    // VAT Tax is set to 24%
+const phone = 300; // Net price
+const total = phone + ( phone * ( VAT / 100 ) ); // Total === net price + VAT
+console.log(total);
+
+//Calories
+
+const rateOfBurn = 0.035 ;
+let weight = 118;
+let velocity = 3.7;
+let caseVelocity = Math.pow(velocity, 2);
+let height = 2.02;
+
+const caloriesBurntPerMinute = (rateOfBurn * weight) + (caseVelocity / height) * (0.029) * (weight);
+console.log(caloriesBurntPerMinute);
+
+//Alcohol test AKA Alkotest
+
+let gender = 'male';
+let bodyWeight = 118;
+let hoursDrinking = 2; 
+const flOzDraught = 17  //flOz = fluid ounce
+let noDrinks = 4
+let weightLbs = 261;
+const β = 0.017; //β is the rate at which alcohol is metabolized. It is approximately 0.017% per hour.;
+const rMale = 0.68;
+const rFemale =  0.55;
+let timeDrinking = 3.5;
+
+const maleEbac = (noDrinks * flOzDraught) / weightLbs - (β * timeDrinking) 
+console.log(maleEbac);
+    </script>
+    
+</body>
+</html>
