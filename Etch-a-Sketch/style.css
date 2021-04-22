@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Baloo);
 
-  *{
+* {
     padding: 0;
     margin: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
     max-width: 100%;
 }
 
@@ -12,7 +12,7 @@ body {
     background-color: rgba(126, 168, 158, 0.829);
 }
 
-h1  {
+h1 {
     margin-bottom: 8px;
 }
 
@@ -28,7 +28,9 @@ h1  {
 }
 
 
-section, h1, .buttons {
+section,
+h1,
+.buttons {
     position: absolute;
     top: 30px;
     left: 50%;
@@ -46,7 +48,6 @@ section, h1, .buttons {
     border-radius: 10px;
     box-shadow: 11px 11px 16px 0 rgba(0, 0, 0, 0.404);
     max-width: 100%;
-
 }
 
 h1 {
@@ -59,14 +60,14 @@ h1 {
 button {
     color: white;
     padding: 5px;
-    background-color:  rgb(21, 88, 72);
+    background-color: rgb(21, 88, 72);
     border-radius: 12px;
     font-family: 'Baloo';
     margin: 15px;
     font-size: 18px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
-    outline: none;  
+    outline: none;
 }
 
 button:hover {
@@ -82,4 +83,3 @@ button:hover {
 h1 {
     top: 0%;
 }
-
