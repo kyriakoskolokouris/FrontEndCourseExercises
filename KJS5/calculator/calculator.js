@@ -12,8 +12,6 @@ function sum(arr) {
 	}, 0)
 }
 
-
-
 function multiply (arr) {
 	return arr.reduce((a, b) => {
 		return a * b
@@ -33,6 +31,7 @@ function factorial(num) {
     num--;
     result *= num;
   }
+  
   return result;
 }
 	
