@@ -1,4 +1,5 @@
-![](README.jpg)
+
+
 
 # WEB 101: JAVASCRIPT FUNDAMENTALS 5
 
