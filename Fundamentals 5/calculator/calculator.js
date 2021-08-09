@@ -1,9 +1,9 @@
-function add () {
-	
+function add (a, b) {
+	return a + b;
 }
 
-function subtract () {
-	
+function subtract (c, d) {
+	return c - d;
 }
 
 function sum () {
